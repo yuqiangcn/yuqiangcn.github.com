@@ -1,0 +1,161 @@
+<!-- Resume Tab Data -->
+<div id="resume">
+    <div id="tab-data-wrap">
+        <section class="clearfix">
+            <div class="g2">
+                <h3>
+                                Experience
+                            </h3>
+                <ul class="no-list work">
+                    <li>
+                        <h5>
+                                    Site web pour ma résumé <a href="http://yuqiangcn.github.io">(http://yuqiangcn.github.io/) </a>
+                                    </h5><span class="label label-info">2015.10</span>
+                        <p>
+                            • Développement d’un site web (HTML, CSS, JavaScript, jQuery, AngularJS)
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                                        Building streaming applications based on GStreamer 
+                                    </h5><span class="label label-info">2015.06 – 2015.09</span>
+                        <p>
+                            • Traitement des vidéos et des audios sur Raspberry Pi (GStreamer)
+                            <br /> • Réalisation de la programmation (C++, OpenCV, OpenGL)
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                                   Web pour le marché <a href="http://free.68ecshop.com/jingdongfree">(http://free.68ecshop.com/jingdongfree)</a>
+                                    </h5><span class="label label-info">2014.10 – 2015.01</span>
+                        <p>
+                            • Création de la base de données (MySQL)
+                            <br /> • Programmation web côté serveur (PHP)
+                            <br /> • Participation à la réalisation des pages principaux de web (HTML, CSS, JavaScript, jQuery, Ajax)
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                                        Projet transversal sur le sujet du goniomètre Doppler 
+                                        </h5><span class="label label-info">2014.09 – 2015.05</span>
+                        <p>
+                            • Compréhension du fonctionnement d’un goniomètre doppler d’algorithme
+                            <br /> • Simulation du goniomètre doppler (Python)
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                                    Waveform spectrum analysis with Android 
+                                    </h5><span class="label label-info">2013.06 – 2014.05</span>
+                        <p>
+                            • Compréhension et optimisation de l’algorithme (Algorithme Fourier)
+                            <br /> • Développement Android (Java)
+                        </p>
+                    </li>
+                </ul>
+                <h3>
+                                Education
+                            </h3>
+                <ul class="no-list work">
+                    <li>
+                        <h5>
+                                        Ingénieur - Électronique (Système Multimédia et Technologie Réseau)
+                                    </h5><span class="label label-success">Depuis 2014</span>
+                        <p>
+                            École Polytechnique de l’Université de Nantes (actuellement en Bac +5)
+                        </p>
+                    </li>
+                    <li>
+                        <h5>
+                                        Licence - Informations optiques
+                                    </h5><span class="label label-success">2010-2014</span>
+                        <p>
+                            South China University of Technology, Canton, Chine (équivalent de baccalauréat)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="g1">
+                <div class="sidebar">
+                    <h3>
+                                    Skills
+                                </h3>
+                    <h5>
+                                    Electronique
+                                </h5>
+                    <div class="meter emerald">
+                        <span style="width: 70%"><span>Conception de circuits numériques,</span></span>
+                    </div>
+                    <div class="meter carrot">
+                        <span style="width: 80%"><span>traitement de signal</span></span>
+                    </div>
+                    <div class="meter wisteria">
+                        <span style="width: 60%"><span>programmation de microcontrôleurs</span></span>
+                    </div>
+                    <h5>
+                                    Informatique
+                                </h5>
+                    <div class="meter emerald">
+                        <span style="width: 40%"><span>HTML</span></span>
+                    </div>
+                    <div class="meter sunflower">
+                        <span style="width: 60%"><span>CSS</span></span>
+                    </div>
+                    <div class="meter midnight">
+                        <span style="width: 63.3%"><span>Python</span></span>
+                    </div>
+                    <div class="meter pomengrate">
+                        <span style="width: 60%"><span>Microsoft Office</span></span>
+                    </div>
+                    <div class="meter asbestos">
+                        <span style="width: 65%"><span>Linux</span></span>
+                    </div>
+                    <div class="break"></div>
+                    <div class="meter carrot">
+                        <span style="width: 67%"><span>Matlab</span></span>
+                    </div>
+                    <div class="meter wisteria">
+                        <span style="width: 70%"><span>jQuery/JavaScript</span></span>
+                    </div>
+                    <div class="meter sunflower">
+                        <span style="width: 40%"><span>PHP</span></span>
+                    </div>
+                    <div class="meter asbestos">
+                        <span style="width: 65%"><span>MySQL</span></span>
+                    </div>
+                    <h5>
+                                    Langues
+                                </h5>
+                    <div class="meter emerald">
+                        <span style="width: 60%"><span>Anglais</span></span>
+                    </div>
+                    <div class="meter carrot">
+                        <span style="width: 70%"><span>Français</span></span>
+                    </div>
+                    <div class="meter wisteria">
+                        <span style="width: 100%"><span>Chinois</span></span>
+                    </div>
+                    <div class="break"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+function animMeter() {
+    $(".meter > span").each(function() {
+        $(this)
+            .data("origWidth", $(this).width())
+            .width(0)
+            .animate({
+                width: $(this).data("origWidth")
+            }, 2400);
+    });
+}
+animMeter();
+
+// Logo
+var $logo = $('#logo');
+$logo.slideDown('slow');
+</script>
+<!-- End Resume Tab Data -->

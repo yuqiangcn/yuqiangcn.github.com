@@ -1,355 +1,58 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>QIANG YU CV</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel='shortcut icon' type='image/x-icon' href='./images/YU.jpg' />
-  
-
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="./js/jquery.min.js"></script>
-  <script src="js/jquery.hashchange.min.js"></script>
-  <script src="js/jquery.easytabs.min.js"></script>
-
-  <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>QIANG YU CV</title>
+    <meta name="description" content="my cv online">
+    <meta name="viewport" content="width=device-width">
+    <link rel='shortcut icon' type='image/x-icon' href='./images/YU.jpg' />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="./js/my_app.js"></script>
 </head>
-  <body class="bg-fixed bg-1">
-   <div class="main-container">
-    <div class="main wrapper clearfix">
-      <!-- Header Start -->
-        <header id="header">
-            <div id="logo">
-                <h2>
+
+<body ng-app="my_app" class="bg-fixed bg-1">
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <!-- Header Start -->
+            <header id="header">
+                <div id="logo">
+                    <h2>
                     YU Qiang
                 </h2>
-                <h4>
+                    <h4>
                     Elève Ingénieur Polytech Nantes
                 </h4>
+                </div>
+            </header>
+            <div class="tab-container">
+                <!-- Tab List -->
+                <ul class='etabs'>
+                    <li class='tab' id="tab-about">
+                        <a href="#about"><i class="icon-user"></i><span> Home</span></a>
+                    </li>
+                    <li class='tab'>
+                        <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                    </li>
+                    <li class='tab'>
+                        <a href="#interests"><i class="icon-heart"></i><span> Interests</span></a>
+                    </li>
+                    <li class='tab'>
+                        <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <!-- Header End -->
-        <!-- Main Tab Container -->
-        <div id="tab-container" class="tab-container">
-          <!-- Tab List -->
-            <ul class='etabs'>
-                <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> Home</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#interests"><i class="icon-heart"></i><span> Interests</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
-                </li>
-            </ul>
-          <!-- End Tab List -->
-            <div id="tab-data-wrap">
-              <!-- About Tab Data -->
-                <div id="about">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <div class="photo">
-                                <img src="./images/YU.jpg" alt="YU Qiang">
-                            </div>
-                            <div class="info">
-                                <h2>
-                                    YU QIANG
-                                </h2>
-                                <h4>
-                                    Elève Ingénieur Polytech Nantes
-                                </h4>
-                                <p>
-                                    Recherche un stage technique / Ingénieur 5ème année                    
-                                </p>
-                                <p>
-                                    À partir de Mars / 6 mois
-                                </p>
-                            </div>
-                        </div>
-                        <div class="g1">
-                                <div class="main-links sidebar">
-                                    <ul>
-                                        <li>
-                                            <a href="#resume">View My Resume</a>
-                                        </li>
-                                        <li>
-                                            <a href="#interests">My Interests</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact">Hire me for your next project</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="contact-info">
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-envelope"></i>
-                              <div class="item-data">
-                                <h3><a href="qiang.yu@etu.univ-nantes.fr">qiang.yu@etu.univ-nantes.fr</a></h3>
-                                <p>Email Address</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-facebook"></i>
-                              <div class="item-data">
-                                <h3><a href="https://www.facebook.com/yuqiangcn">Qiang Yu</a></h3>
-                                <p>Facebook Profile</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-twitter"></i>
-                              <div class="item-data">
-                                <h3><a href="https://www.linkedin.com/profile/view?id=AAIAABczHUQB3TVqylfYNrLjXb4XI4y7wL_M00Q&trk=nav_responsive_tab_profile">Qiang YU</a></h3>
-                                <p>LinkedIn</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </section><!-- content -->
-                </div>
-              <!-- End About Tab Data -->
-              <!-- Resume Tab Data -->
-                <div id="resume">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <h3>
-                                Experience
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        Building streaming applications based on GStreamer
-                                    </h5><span class="label label-info">2015.07 – 2015.09</span>
-                                    <p>
-                                       • Traitement des vidéos et des audios sur Raspberry Pi (GStreamer)  <br />
-                                       • Réalisation de la programmation (C++)
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Projet transversal sur le sujet du goniomètre Doppler
-                                    </h5><span class="label label-info">2014.09 – 2015.05</span>
-                                    <p>
-                                      • Compréhension du fonctionnement d’un goniomètre doppler d’algorithme  <br />
-                                      • Simulation du goniomètre doppler (Python)
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Programmer une application Android
-                                    </h5><span class="label label-info">2013.06 – 2014.06</span>
-                                    <p>
-                                        • Compréhension et optimisation de l’algorithme (Algorithme Fourier) <br />
-                                        • Réalisation de logiciel (Java)
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        <a href="http://free.68ecshop.com/jingdongfree">Web pour le marché</a>
-                                    </h5><span class="label label-info">2012.07 – 2012.08</span>
-                                    <p>
-                                        • Participation à la création de la base de données (MySQL)  <br />
-                                        • Participation à la réalisation des pages principaux de web (HTML et CSS)
-                                    </p>
-                                </li>
-                            </ul>
-                            <h3>
-                                Education
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        Ingénieur - Électronique (Système Multimédia et Technologie Réseau)
-                                    </h5><span class="label label-success">Depuis 2014</span>
-                                    <p>
-                                        École Polytechnique de l’Université de Nantes (actuellement en Bac +5)
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Licence - Informations optiques
-                                    </h5><span class="label label-success">2010-2014</span>
-                                    <p>
-                                        South China University of Technology, Canton, Chine (équivalent de baccalauréat)
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="g1">
-                            <div class="sidebar">
-                                <h3>
-                                    Skills
-                                </h3>
-                                <h5>
-                                    Electronique
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 70%"><span>Conception de circuits numériques,</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 80%"><span>traitement de signal</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>programmation de microcontrôleurs</span></span>
-                                </div>
-                                
-                                <h5>
-                                    Informatique
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 40%"><span>HTML</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 60%"><span>CSS</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 63.3%"><span>Python</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 60%"><span>Microsoft Office</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 65%"><span>Linux</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <div class="meter carrot">
-                                    <span style="width: 67%"><span>Matlab</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 70%"><span>jQuery/JavaScript</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 40%"><span>PHP</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 65%"><span>MySQL</span></span>
-                                </div>
-
-                                <h5>
-                                    Langues
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 60%"><span>Anglais</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 70%"><span>Français</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 100%"><span>Chinois</span></span>
-                                </div>
-                                <div class="break"></div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-              <!-- End Resume Tab Data -->
-
-              <!-- Interests Tab Data -->
-                <div id="interests">
-                    <section class="clearfix">
-                    <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Activités Associatives</h4>
-                              <p>
-                                Bénévolat comme instituteur dans l’ouest de la Chine
-                              </p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                            <div class="sny-icon-box">
-                                <div class="sny-icon">
-                                    <i class="icon-globe"></i>
-                                </div>
-                                <div class="sny-icon-content">
-                                    <h4>Sports</h4>
-                                    <p>tennis de table, jogging, natation, volley-ball</p>
-                                </div>
-                            </div>
-                       </div>
-                       <div class="g1">
-                            <div class="sny-icon-box">
-                                <div class="sny-icon">
-                                    <i class="icon-globe"></i>
-                                </div>
-                                <div class="sny-icon-content">
-                                    <h4>Autres</h4>
-                                    <p>Voyage, Musique</p>
-                                </div>
-                            </div>
-                       </div>
-                  </div>
-              <!-- End Interests Data -->
-              <!-- Contact Tab Data -->
-                <div id="contact">
-                    <section class="clearfix">
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>My Address</h4>
-                              <p>2 Rue de Jussieu <br />
-                                    Nantes 44300, France</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-phone"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>+33 (0)7 70 48 60 12</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-user"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>About Me</h4>
-                              <p>I love to work, I love IT. So don't be hesitate, just give me a chance.</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="break"></div>
-                       
-                    </section>
-                </div>
-              <!-- End Contact Data -->
-            </div>
+            <!-- End Tab List -->
+            <div page class= {{pageClass}} ng-view></div>
         </div>
-        <!-- End Tab Container -->
-        
-    </div><!-- #main -->
-</div><!-- #main-container -->
-
-
-
+    </div>
+    <!-- End Tab List -->
+    <!-- Header End -->
 </body>
+
 </html>
