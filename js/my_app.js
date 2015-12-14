@@ -1,4 +1,4 @@
-// create the module and name it scotchApp
+// create the module and name it App
 // also include ngRoute for all our routing needs
 var App = angular.module('my_app', ['ngRoute', 'ngAnimate']);
 
